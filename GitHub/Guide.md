@@ -4,11 +4,12 @@
 
 Git est un système de contrôle de version distribué conçu pour gérer tout, des petits aux grands projets, avec rapidité et efficacité. Il est utilisé pour suivre les modifications dans le code source au cours du temps.
 
+## Initier un projet Git avec GitHub
+
+Pour créer un repo Git sur GitHub rien de plus simple.
 
 
-
-
-
+<img src="/img/1-create-repo.png" height="150px" />
 
 1. **git init**
    - Description : Initialise un nouveau dépôt Git local.
