@@ -4,12 +4,8 @@
 
 Git est un système de contrôle de version distribué conçu pour gérer tout, des petits aux grands projets, avec rapidité et efficacité. Il est utilisé pour suivre les modifications dans le code source au cours du temps.
 
-## Initier un projet Git avec GitHub
 
-Pour créer un repo Git sur GitHub rien de plus simple. Il vous suffit de cliquer sur "New".
-
-
-<img src="./img/1-create-repo.png" height="500px" />
+## Les commandes git
 
 1. **git init**
    - Description : Initialise un nouveau dépôt Git local.
@@ -43,7 +39,7 @@ Pour créer un repo Git sur GitHub rien de plus simple. Il vous suffit de clique
     
         Description : Ajoute un fichier à la zone de préparation (staging area) pour le prochain commit.
   
-        Pour éviter de publier maladroitement des fichiers d'environnement, des cédentials de base de données ou tout autres fichier qui ne devrait pas l'être je recommand d'utiliser cette commande
+        Pour éviter de publier maladroitement des fichiers d'environnement, des cédentials de base de données ou tout autres fichiers qui ne devrait pas l'être je recommande d'utiliser cette commande
         ```bash
         git add [fichier]
         ```
@@ -99,3 +95,42 @@ Pour créer un repo Git sur GitHub rien de plus simple. Il vous suffit de clique
         ```bash
         git merge [nom de la branche]
         ```
+
+
+## Utiliser Git avec GitHub
+
+### Crée un nouveau repository
+
+Pour créer un repo Git sur GitHub rien de plus simple. Il vous suffit de cliquer sur "New".
+
+
+<img src="./img/1-create-repo.png" height="500px" />
+
+### Configurer son repo
+
+Choisiez ensuite le nom de votre repo, ajouter une petite description (optionnelle) et choisiez si votre repo sera public (visible de tous) ou privée (uniquement visible par vous et les personnes autorisées).
+
+Je vous invite ensuite à côcher la case "Add a readme file"
+
+<img src="./img/1-configure-my-repo.png" height="500px" />
+
+### Cloner son projet
+
+#### Récupérer le lien du repo symbolique du repo distant
+
+<img src="./img/1-clone-repo-part1.png" height="500px" />
+
+#### Effectuer la copie locale
+`git clone [url_symbolique]`
+
+<img src="./img/1-clone-repo-part2.png" height="500px" />
+
+Vous pouvez maintenant faire vos modifications en local, bouger de branche en branche avec `git checkout [branche]`
+Je vous recommande de toujour travailler sur une copie de la branch main et pas directement dessus.
+Pensez également à faire des commit régulier et de les copier sur votre repo distant avec `git push` comme ça pas de soucis en cas de pépin vous avez toujours une sauvegarde de votre travail.
+
+Une fois votre travail effectué, envoyé le sur la branche distante (`git push [remote] [branche]`) et demandé fusion de votre code avec celui de votre équipe (ouverture d'une pull request).
+
+Vous pouvez maintenant revenir sur la branch main. La mettre à jour `git fetch origin` puis `git pull origin main`.
+
+Besoin de tester le code d'un de vos collègue ? Demandé lui de push et après rien de plus simple `git fetch origin`, `git checkout [nom_de_sa_branche]` et vous être pararé pour exécuter son code.
