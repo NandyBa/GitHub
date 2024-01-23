@@ -134,3 +134,22 @@ Une fois votre travail effectué, envoyé le sur la branche distante (`git push 
 Vous pouvez maintenant revenir sur la branch main. La mettre à jour `git fetch origin` puis `git pull origin main`.
 
 Besoin de tester le code d'un de vos collègue ? Demandé lui de push et après rien de plus simple `git fetch origin`, `git checkout [nom_de_sa_branche]` et vous être pararé pour exécuter son code.
+
+
+### FAQ
+<details>
+     <summary>Comment contribuer à un projet ?</summary>
+
+     Rien de plus simple il vous suffit de le fork à partir de la page GitHub du projet. En ensuite cloné le repo comme un nouveau repo et c'est bon vous être partie.
+</details>
+<details>
+     <summary>Comment avoir plus de chance que mes contributions soient acceptées</summary>
+
+     Je vous conseil de créer une issue GitHub avant de vous ateler à la tâche. Comme ça vous pourrez discutez avec le développeur qui maintien le repo et vous assurer de l'amélioration que vous avez en tête correspond à comment il voit les choses
+</details>
+<details>
+     <summary>Je maîtrise déjà tous ces points, qu'apprendre maintenant</summary>
+     
+     Je t'invite à pratiquer et à créer tes propres projets
+     Sinon tu peux aussi regarder l'intégration CI/CD
+</details>
