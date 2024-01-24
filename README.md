@@ -104,7 +104,7 @@ Git est un système de contrôle de version distribué conçu pour gérer tout, 
 Pour créer un repo Git sur GitHub rien de plus simple. Il vous suffit de cliquer sur "New".
 
 
-<img src="./img/1-create-repo.png" height="500px" />
+<img src="./GitHub/img/1-create-repo.png" height="500px" />
 
 ### Configurer son repo
 
