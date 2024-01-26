@@ -104,7 +104,7 @@ Git est un système de contrôle de version distribué conçu pour gérer tout, 
 Pour créer un repo Git sur GitHub rien de plus simple. Il vous suffit de cliquer sur "New".
 
 
-<img src="./GitHub/img/1-create-repo.png" height="500px" />
+<img src="./GitHub/img/1-create-repo.png" width="80%" />
 
 ### Configurer son repo
 
@@ -112,18 +112,18 @@ Choisiez ensuite le nom de votre repo, ajouter une petite description (optionnel
 
 Je vous invite ensuite à côcher la case "Add a readme file"
 
-<img src="./GitHub/img/1-configure-my-repo.png" height="500px" />
+<img src="./GitHub/img/1-configure-my-repo.png" width="80%" />
 
 ### Cloner son projet
 
 #### Récupérer le lien du repo symbolique du repo distant
 
-<img src="./GitHub/img/1-clone-repo-part1.png" height="500px" />
+<img src="./GitHub/img/1-clone-repo-part1.png" width="80%" />
 
 #### Effectuer la copie locale
 `git clone [url_symbolique]`
 
-<img src="./GitHub/img/1-clone-repo-part2.png" height="500px" />
+<img src="./GitHub/img/1-clone-repo-part2.png" width="80%" />
 
 Vous pouvez maintenant faire vos modifications en local, bouger de branche en branche avec `git checkout [branche]`
 Je vous recommande de toujour travailler sur une copie de la branch main et pas directement dessus.
